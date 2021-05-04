@@ -17,7 +17,7 @@ interface Props {
   filter: 'all' | 'active' | 'completed';
 }
 
-export function* TodosScreen(this: Context<Props, any>, props: Props) {
+export function* TodosScreen(this: Context<Props, any>, _props: Props) {
   this.addEventListener('add-todo', (event: Event) => {
     const value = (event as CustomEvent<string>).detail;
     saveTodo(value);

@@ -6,7 +6,7 @@ interface Props {
   todos: Todo[];
 }
 
-export function* TodoList(this: Context<Props, any>, props: Props) {
+export function* TodoList(this: Context<Props, any>, _props: Props) {
   const handleChange = () => {
     this.dispatchEvent(new CustomEvent('toggle-all-completed', { bubbles: true }));
   };

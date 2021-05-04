@@ -5,7 +5,7 @@ interface Props {
   selected: 'all' | 'active' | 'completed';
 }
 
-export function* Footer(this: Context<Props, any>, props: Props) {
+export function* Footer(this: Context<Props, any>, _props: Props) {
   const handleClick = () => {
     this.dispatchEvent(new CustomEvent('clear-completed', { bubbles: true }));
   };

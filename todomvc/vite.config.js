@@ -3,4 +3,7 @@ export default {
     jsxFactory: 'createElement',
     jsxFragment: 'Fragment',
   },
+  build: {
+    target: 'esnext',
+  },
 };
