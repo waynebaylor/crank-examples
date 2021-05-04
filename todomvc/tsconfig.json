@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "jsx": "react",
+    "jsxFactory": "createElement",
+    "jsxFragmentFactory": "Fragment",
     "target": "ESNext",
     "module": "ESNext",
     "lib": ["ESNext", "DOM"],
