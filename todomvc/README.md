@@ -4,7 +4,7 @@ This is a Crank.js implementation of [TodoMVC](https://todomvc.com/) which follo
 
 The goal of this example is to implement TodoMVC with Crank as if it were an app. The code has been structured to make implementing _the next feature_ as easy as possible. It is not supposed to be clever or hyper-optimized. Hopefully it's easy to read and understand.
 
-To see it in action, check out the **[DEMO](http://waynebaylor.github.io/crank-examples/todomvc)**
+To see it in action, check out the **[DEMO](https://waynebaylor.github.io/crank-examples/todomvc)**
 
 ## Implementation
 
