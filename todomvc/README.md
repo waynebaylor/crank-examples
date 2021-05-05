@@ -8,9 +8,9 @@ The goal of this example is to implement TodoMVC with Crank as if it were an app
 
 ### Libraries
 
-- [Vite](https://vitejs.dev/) - build tool (compare with Webpack, Parcel, etc)
-- [Crank.js](https://crank.js.org/) - view library (compare with React, Vue, etc)
-- [roadtrip](https://github.com/Rich-Harris/roadtrip) - router (compare with Page.js, Navigo, etc)
+- [Vite](https://vitejs.dev/) - build tool (alternatives: Webpack, Parcel, etc)
+- [Crank.js](https://crank.js.org/) - view library
+- [roadtrip](https://github.com/Rich-Harris/roadtrip) - router (alternatives: Page.js, Navigo, etc)
 
 ### Highlights
 

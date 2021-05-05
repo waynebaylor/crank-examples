@@ -74,7 +74,7 @@ export function* TodosScreen(this: Context<Props, any>, _props: Props) {
         {todoCount > 0 && (
           <Fragment>
             <TodoList todos={todos} />
-            <Footer selected={filter} />
+            <Footer filter={filter} />
           </Fragment>
         )}
       </section>

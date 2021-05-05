@@ -1,8 +1,9 @@
 import { Context, createElement } from '@bikeshaving/crank';
 import { getActiveTodos, getCompletedTodos } from '../todoService';
+import { Link } from './Link';
 
 interface Props {
-  selected: 'all' | 'active' | 'completed';
+  filter: 'all' | 'active' | 'completed';
 }
 
 export function* Footer(this: Context<Props, any>, _props: Props) {
@@ -10,7 +11,7 @@ export function* Footer(this: Context<Props, any>, _props: Props) {
     this.dispatchEvent(new CustomEvent('clear-completed', { bubbles: true }));
   };
 
-  for (const { selected } of this) {
+  for (const { filter } of this) {
     const activeCount = getActiveTodos().length;
     const completedCount = getCompletedTodos().length;
 
@@ -21,19 +22,19 @@ export function* Footer(this: Context<Props, any>, _props: Props) {
         </span>
         <ul class="filters">
           <li>
-            <a class={selected === 'all' ? 'selected' : ''} href="/">
+            <Link selected={filter === 'all'} href="/">
               All
-            </a>
+            </Link>
           </li>
           <li>
-            <a class={selected === 'active' ? 'selected' : ''} href="/active">
+            <Link selected={filter === 'active'} href="/active">
               Active
-            </a>
+            </Link>
           </li>
           <li>
-            <a class={selected === 'completed' ? 'selected' : ''} href="/completed">
+            <Link selected={filter === 'completed'} href="/completed">
               Completed
-            </a>
+            </Link>
           </li>
         </ul>
         {completedCount > 0 && (
