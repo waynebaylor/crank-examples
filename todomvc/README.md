@@ -1,4 +1,4 @@
-# TodoMVC ()
+# TodoMVC
 
 This is a Crank.js implementation of [TodoMVC](https://todomvc.com/) which follows the recommended TodoMVC [application specification](https://github.com/tastejs/todomvc/blob/master/app-spec.md).
 

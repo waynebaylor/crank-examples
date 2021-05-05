@@ -4,4 +4,4 @@
 
 ## TodoMVC
 
-This is an implementation of the TodoMVC specification. The goal for this example is to treat TodoMVC as an app and to take a structured approach to implementing it. See `todomvc/README.md` for details.
+This is an implementation of the TodoMVC specification. The goal for this example is to treat TodoMVC as an app and to take a structured approach to implementing it. See [todomvc/README.md](./todomvc/README.md) for details.
