@@ -1,8 +1,61 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import 'spectre.css';
+@import '@fortawesome/fontawesome-free/css/all';
+
+body {
+  background-color: #eee;
+}
+
+.container {
+  background-color: #fff;
+  border-left: 1px solic #ddd;
+  border-right: 1px solic #ddd;
+  padding-bottom: 1rem;
+}
+
+header {
+  padding: 1rem 0;
+  border-bottom: 1px solid #333;
+  margin-bottom: 1rem;
+}
+
+header .links button {
+  margin-right: 1rem;
+}
+
+.listing {
+  padding: 0 2rem;
+}
+
+.subtitle {
+  margin-top: -0.5rem;
+  color: gray;
+  font-size: 0.7rem;
+}
+
+.tile {
+  padding: 1rem 0;
+}
+
+.tile + .tile {
+  border-top: 1px solid #ddd;
+}
+
+.tile-icon {
+  color: #555;
+}
+
+.date-range {
+  color: gray;
+  float: right;
+}
+
+.sentinal {
+  padding: 1rem;
+  background-color: #ccc;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+.finish {
+  padding: 1rem;
+  text-align: center;
 }
