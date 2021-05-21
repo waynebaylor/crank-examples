@@ -1,8 +1,8 @@
 import { Context, createElement } from '@bikeshaving/crank';
 import { ApiItem } from '../ApiResponse';
 import { fetchPage } from '../apiService';
-import { Header } from './Header';
-import { Listing } from './Listing';
+import { Header } from '../components';
+import { Listing } from '../components';
 
 interface Props {}
 
