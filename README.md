@@ -6,16 +6,16 @@
 
 This is an implementation of the TodoMVC specification. The goal for this example is to treat TodoMVC as an app and to take a structured approach to implementing it.
 
-See [todomvc/README.md](./todomvc/README.md) for details.
+See [todomvc](./todomvc) for details.
 
 ## Simple Infinite Scroll
 
 Implementing infinite scroll with Crank.
 
-See [simple-infinite-scroll/README.md](./simple-infinite-scroll/README.md) for details.
+See [simple-infinite-scroll](./simple-infinite-scroll) for details.
 
 ## Advanced Infinite Scroll
 
 This example takes _Simple Infinite Scroll_ and makes some optimizations.
 
-See [advanced-infinite-scroll/README.md](./advanced-infinite-scroll/README.md) for details.
+See [advanced-infinite-scroll](./advanced-infinite-scroll) for details.
