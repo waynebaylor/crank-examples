@@ -14,6 +14,7 @@ export async function* AdvancedInfiniteScroll(this: Context<Props, any>, _props:
 
   this.addEventListener('clear-cache', async () => {
     await clearCache();
+    pagedVisibility.clear();
     pagedData.clear();
 
     this.refresh();
@@ -33,7 +34,6 @@ export async function* AdvancedInfiniteScroll(this: Context<Props, any>, _props:
 
     // these events can fire rapidly, so let's delay refreshing a bit to see if another event comes in.
     if (!isNaN(refreshHandle)) {
-      console.log('skipping refresh', refreshHandle);
       clearTimeout(refreshHandle);
     }
 

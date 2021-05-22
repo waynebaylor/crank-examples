@@ -77,7 +77,7 @@ export function* TodosScreen(this: Context<Props, any>, _props: Props) {
 }
 ```
 
-The usage in `Context<Props, any>` allows the type information to carry over into the `for` loop. The second usage in `_props: Props` provides valid keys/types when using the compoenent, like `<TodosScreen filter="all" />`.
+The usage in `Context<Props, any>` allows the type information to carry over into the `for` loop. The second usage in `_props: Props` provides valid keys/types when using the component, like `<TodosScreen filter="all" />`.
 
 > NOTE: `_props` is unused and typescript will tell you that's a problem. You could disable `noUnusedParameters` or toss in `@ts-ignore`, but I've chosen to use the `_` prefix as seen here.
 
