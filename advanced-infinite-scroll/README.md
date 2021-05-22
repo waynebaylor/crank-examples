@@ -1,6 +1,6 @@
 # Advanced Infinite Scroll
 
-Let's take the [Simple Infinite Scroll](https://github.com/waynebaylor/crank-examples/tree/main/simple-infinite-scroll) concept and make a few optimizations.
+Let's take the [Simple Infinite Scroll](../simple-infinite-scroll) concept and make a few optimizations.
 
 There are many ways to implement "infinite scroll". A big factor in any implementation is how much control the developer takes over manipulating the DOM. We want to take some control, but still have [Crank](https://crank.js.org/) do the heavy lifting in terms of managing DOM nodes.
 
