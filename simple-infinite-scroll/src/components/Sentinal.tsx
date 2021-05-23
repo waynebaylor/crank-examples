@@ -1,15 +1,12 @@
 import { Context, Copy, createElement } from '@bikeshaving/crank';
 
 export function* Sentinal(this: Context) {
-  let sentinalNode: Element;
-
   const intersectionObserver = new IntersectionObserver(
     (entries) => {
-      entries.forEach((entry) => {
-        if (entry.target === sentinalNode && entry.isIntersecting) {
-          this.dispatchEvent(new CustomEvent('sentinal-visible', { bubbles: true }));
-        }
-      });
+      const entry = entries[0]; // we're only observing 1 node
+      if (entry.isIntersecting) {
+        this.dispatchEvent(new CustomEvent('sentinal-visible', { bubbles: true }));
+      }
     },
     { root: null, rootMargin: '0px', threshold: 1.0 }
   );
@@ -18,7 +15,6 @@ export function* Sentinal(this: Context) {
     // wait a moment/tick for the node to get connected to the dom
     requestAnimationFrame(() => {
       intersectionObserver.observe(node);
-      sentinalNode = node;
     });
   });
 
